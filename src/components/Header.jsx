@@ -46,10 +46,12 @@ const Header = () => {
             <a href="#abha" className="hidden sm:inline-block bg-teal-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-teal-700 transition-all duration-300 shadow-lg shadow-teal-600/20">Link ABHA ID</a>
             {/* Mobile Menu Button */}
             <div className="md:hidden ml-4">
-              <button id="mobile-menu-button" onClick={toggleMobileMenu} className="text-slate-600 hover:text-teal-600">
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
+              <button id="mobile-menu-button" onClick={toggleMobileMenu} className="relative group p-2 bg-slate-100 hover:bg-teal-50 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md">
+                <div className="w-6 h-6 flex flex-col justify-center items-center">
+                  <span className={`block h-0.5 w-5 bg-slate-600 transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-1'}`}></span>
+                  <span className={`block h-0.5 w-5 bg-slate-600 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                  <span className={`block h-0.5 w-5 bg-slate-600 transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-1'}`}></span>
+                </div>
               </button>
             </div>
           </div>
