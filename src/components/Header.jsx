@@ -27,7 +27,7 @@ const Header = () => {
           {/* Logo */}
           <a href="#home" className="flex-shrink-0 group">
             <h1 className="text-2xl font-black text-slate-800 tracking-tighter transition-transform group-hover:scale-105">
-              WeCare<span className="text-teal-600">Lives</span>
+              We Care<span className="text-teal-600">Live</span>
               <div className="flex items-center gap-1 mt-0.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-teal-500"></span>
                 <span className="text-[8px] font-bold uppercase tracking-widest text-slate-400">Official Health Partner</span>
